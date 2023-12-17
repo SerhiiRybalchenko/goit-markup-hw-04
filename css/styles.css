@@ -141,6 +141,18 @@ a:focus {
 .header-list-link {
   padding: 24px 0 24px;
 }
+.header-list-link.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
+.header-list-link.active {
+  color: #404bbf;
+}
+
 .header-adress {
   color: #434455;
   font-style: normal;
@@ -343,13 +355,13 @@ a:focus {
   border-radius: 50%;
 }
 .socials-link:hover,
-.socials-link:hover {
+.socials-link:focus {
   background-color: #404bbf;
   color: #f4f4fd;
 }
 
 .socials-icon {
-  fill: currentColor;
+  fill: #f4f4fd;
 }
 
 /* Portfolio section */
